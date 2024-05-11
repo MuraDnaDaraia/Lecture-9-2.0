@@ -1,0 +1,141 @@
+body {
+    font-family: 'DieCunst', sans-serif !important;
+    overflow-x: hidden;                                          
+}
+.HeaderLogo{
+    display: flex;
+}
+nav, nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    align-items: flex-end;
+}
+header{
+    justify-content: space-between;
+    display: flex !important;
+}
+header div{
+    display: none;
+}
+.section1{
+    background-image: url(../img/Rectangle\ 1.svg);
+    background-size: cover;
+    background-position: center;
+    width: 1536px;
+    height: 606px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.MainH1{
+    font-size: 500%;
+    color: white;
+}
+.Mainp{
+    color: white;
+    word-spacing: 10px;
+}
+main{
+    margin-top: 30px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section2{
+    display: flex !important;
+    width: 300px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 150%;
+}
+.section2h1{
+    font-size: 150%;
+}
+.section3{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 918px;
+    justify-content: space-around;
+}
+
+.section3 div{
+    width: 286px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+.DivH1{
+    word-spacing: 10px;
+}
+@media screen and (max-width: 1024px){
+     body{
+        width: 1024px;
+     }
+     .section1{
+        width: 1024px;
+        height: 450px;
+     }
+     main{
+        flex-direction: column;
+        align-items: center;
+     }
+}
+
+@media screen and (max-width:768px){
+    nav{
+        display: none;
+    }
+    body{
+        width: 768px;
+    }
+    .section1{
+        width: 768px;
+        height: 325px;
+        font-size: 75%;
+    }
+    main{
+        width: 768px;
+    }
+    .section3{
+        width: 100%;
+        flex-direction: row;
+    }
+    header div{
+        display: inline-block !important;
+        cursor: pointer;
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+    header div span {
+        display: block;
+      height: 3px;
+      width: 50px;
+      margin-bottom: 5px;
+      background-color: #000;
+    }
+}
+    @media screen and (max-width:480px){
+        
+    body{
+        width: 480px;
+    }
+    .section1{
+        width: 100%;
+        height: 285px;
+        font-size: 50%;
+    }
+    main{
+        width: 100%;
+    }
+    .section2{
+    margin-bottom: 20px;
+    }
+
+
+}
